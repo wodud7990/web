@@ -4,14 +4,26 @@
 <meta charset="UTF-8">
 <title>HTML-Main</title>
 </head>
-<body>
-	<h1><p>
-	ここはMainです。
+<body style="background-color: white; color: black;">
+	<h1>
+		<p>ここはMainです。
 	</h1>
 	<a href="Main.html"><img src="MainIMG.jpg" width="40%" title="Main"></a>
 	<ol>
 		<li><a href="1.html">タッグ</a></li>
-	</ol></p>
-	
+		<li><a href="2.html">checkBox</a></li>
+	</ol>
+	</p>
+
+	<input type="button" value="night"
+		onclick="
+	document.querySelector('body').style.backgroundColor='black';
+	document.querySelector('body').style.color='white';">
+
+	<input type="button" value="mornig(default)"
+		onclick="
+	document.querySelector('body').style.backgroundColor='white';
+	document.querySelector('body').style.color='black';">
+
 </body>
 </html>
