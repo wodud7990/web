@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#grid {
+	border: 3px solid pink;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
+}
+
+h1 {
+	border: 10px solid gray;
+	font-size: 45px;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+div {
+	border: 3px solid gray;
+}
+
+ol {
+	margin: 0;
+}
