@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<link rel="stylesheet" type="text/css" href="Main.css">
+<h1 id="h1">
+	<a href="test.html">Animals[動物][동물]</a>
+</h1>
+</head>
+<body>
+	<div class="List">
+		<script type="text/javascript">
+			var animals = [ "Cat", "Elephant", "Turtle", "Dog", "Giraffe",
+					"Zebra" ];
+
+			for (i = 0; i < animals.length; i++) {
+				document.write('<p><li><a href='+animals[i]+'.html>'
+						+ animals[i] + '</a></li></P>');
+
+			}
+		</script>
+	</div>
+</body>
+</html>
