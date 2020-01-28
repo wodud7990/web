@@ -2,10 +2,11 @@
 
 a {
 	text-decoration: none;
+	color: blue;
 }
 
 #h1 {
-	border: 10px solid black;
+	border: 10px solid gray;
 	font-size: 45px;
 	text-align: center;
 	padding: 20px;
@@ -14,5 +15,5 @@ a {
 
 .List {
 	text-align: center;
+	font-size: 25px;
 }
-

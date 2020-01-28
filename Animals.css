@@ -1,10 +1,16 @@
 @charset "UTF-8";
 
+a {
+	color: blue;
+	text-decoration: none;
+}
+
 #grid {
 	border: 3px solid pink;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin: 0;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 h1 {
@@ -15,12 +21,9 @@ h1 {
 	margin: 0;
 }
 
-a {
-	text-decoration: none;
-}
-
 div {
 	border: 3px solid gray;
+	font-size: 25px;
 }
 
 ol {
