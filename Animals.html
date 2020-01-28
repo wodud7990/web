@@ -39,7 +39,8 @@
 	<input type="button" value="Dark Mode"
 		onclick="
 /* onclickはscriptの文法を使う
- *重複を消すためにtargetと言う関数を宣言　　
+ *重複を消すためにtargetと言う関数を宣言　
+ *document.querySelector()対象と指定する　
  */
 
 	var target = document.querySelector('body');
@@ -49,6 +50,7 @@
 		this.value='White Mode';
 /* ここは画面の色が変わりによって自動的に
  * CSSの設定が変わるようにすること
+ * document.querySelectorAll()これは対象とするのが複数の場合
  */
 
 	var a = document.querySelectorAll('a');
