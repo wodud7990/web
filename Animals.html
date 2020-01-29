@@ -3,7 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>Animals Photo</title>
+<script type="text/javascript">
+	function setColor3(color) {
+		document.querySelector('body').style.backgroundColor = color;
+	}
+	function setColor2(color) {
+		document.querySelector('body').style.color = color;
+	}
+	function setColor(color) {
+		var a = document.querySelectorAll('a');
+		var i = 0;
+		while (i < a.length) {
+			a[i].style.color = color;
+			i = i + 1;
+		}
+	}
+	function Change(self) {
+		var target = document.querySelector('body');
+		if (self.value === 'Dark Mode') {
+			setColor3('black');
+			setColor2('white');
+			self.value = 'White Mode';
+			/* ここは画面の色が変わりによって自動的に
+			 * CSSの設定が変わるようにすること
+			 * document.querySelectorAll()これは対象とするのが複数の場合
+			 */
+			setColor('powderblue');
 
+		} else {
+			setColor3('white');
+			setColor2('black');
+			self.value = 'Dark Mode';
+
+			setColor('blue');
+		}
+	}
+</script>
 <!-- CSSファイルと連結するための宣言 -->
 <link rel="stylesheet" href="Main.css" type="text/css">
 
@@ -14,15 +49,13 @@
 </head>
 <body>
 
-<!-- 一括でCSS文法を適用するために何の意味もないdivを使用し一括設定が可能にする -->
+	<!-- 一括でCSS文法を適用するために何の意味もないdivを使用し一括設定が可能にする -->
 	<div class="List">
-	
-<!-- javascriptを使うためにタッグを作る -->
+
+		<!-- javascriptを使うためにタッグを作る -->
 		<script type="text/javascript">
-		
-/*	何回も入力するのは大変だし効率的ではないので
-	関数を定義して条件を入れ反復文を作る*/
-	
+			/*	何回も入力するのは大変だし効率的ではないので  関数を定義して条件を入れ反復文を作る*/
+
 			var animals = [ "Cat[猫][고양이]", "Elephant[象][코끼리]",
 					"Turtle[亀][거북이]", "Dog[犬][개]", "Giraffe[麒麟][기린]",
 					"Zebra[縞馬][얼룩말]" ];
@@ -34,43 +67,13 @@
 			}
 		</script>
 	</div>
-	
-<!-- ここからは画面の色を変える機能が入っているボータンを作る -->
-	<input type="button" value="Dark Mode"
+
+	<!-- ここからは画面の色を変える機能が入っているボータンを作る -->
+	<input id=change type="button" value="Dark Mode"
 		onclick="
-/* onclickはscriptの文法を使う
- *重複を消すためにtargetと言う関数を宣言　
- *document.querySelector()対象と指定する　
- */
-
-	var target = document.querySelector('body');
-	if(this.value ==='Dark Mode'){
-		target.style.backgroundColor='black';
-		target.style.color='powderblue';
-		this.value='White Mode';
-/* ここは画面の色が変わりによって自動的に
- * CSSの設定が変わるようにすること
- * document.querySelectorAll()これは対象とするのが複数の場合
- */
-
-	var a = document.querySelectorAll('a');
-	var i = 0;
-	while(i < a.length){
-		a[i].style.color='powderblue';
-		i=i+1;
-		}
-	}else{
-		target.style.backgroundColor='white';
-		target.style.color='black';
-		this.value='Dark Mode';
-		
-	var a = document.querySelectorAll('a');
-	var i = 0;
-	while(i < a.length){
-		a[i].style.color='blue';
-			i=i+1;
-			}
-		}
-	">
+		Change(this);
+/* onclickはscriptの文法を使う 重複を消すためにtargetと言う関数を宣言　
+ 	document.querySelector()対象と指定する*/
+">
 </body>
 </html>
