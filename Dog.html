@@ -4,38 +4,10 @@
 <meta charset="UTF-8">
 <title>Animals Photo</title>
 <link rel="stylesheet" href="Animals.css" type="text/css">
-<script type="text/javascript">
-	function setColor3(color) {
-		document.querySelector('body').style.backgroundColor = color;
-	}
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="Animals.js">
 	
-	function setColor2(color) {
-		document.querySelector('body').style.color = color;
-	}
-	
-	function setColor(color) {
-		var a = document.querySelectorAll('a');
-		var i = 0;
-		while (i < a.length) {
-			a[i].style.color = color;
-			i = i + 1;
-		}
-	}
-	
-	function Change(self) {
-		var target = document.querySelector('body');
-		if (self.value === 'Dark Mode') {
-			setColor3('black');
-			setColor2('white');
-			setColor('white');
-			self.value = 'White Mode';
-		} else {
-			setColor3('white');
-			setColor2('black');
-			setColor('blue');
-			self.value = 'Dark Mode';
-		}
-	}
 </script>
 </head>
 <body>
