@@ -24,6 +24,6 @@ function Change(self) {
 		setColor2('black');
 		self.value = 'Dark Mode';
 
-		setColor('blue');
+		setColor('black');
 	}
 }
