@@ -1,10 +1,10 @@
-function setColor3(color){
+function setColor3(color) {
 	$('body').css('backgroundColor', color);
 }
-function setColor2(color){
+function setColor2(color) {
 	$('body').css('color', color);
 }
-function setColor(color){
+function setColor(color) {
 	$('body').css('color', color);
 }
 function Change(self) {
