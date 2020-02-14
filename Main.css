@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+	background-image: url(InfoMain.jpg);
+}
+
+table {
+	background-color: white;
+}
