@@ -1,3 +1,2 @@
 # web
-Main
-welcome
+지금부터 차근차근 하나하나
