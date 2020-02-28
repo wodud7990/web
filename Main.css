@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+h1 {
+	border-bottom: 3px solid black;
+}
+
+a {
+	text-decoration: none;
+}
+
+u {
+	color: blue;
+}
+
+body {
+	color: black;
+	text-align: center;
+	background-image: url("MainB.jpg");
+	background-size: auto;
+}
